@@ -1,0 +1,16 @@
+response_id,survey_date,satisfaction_score,reason_for_rating,feature_feedback,improvement_suggestions,feedback_text
+CS401,2023-10-11,5,Excellent customer support,Comments about API,Suggestions for API,Excellent customer support - API feedback.
+CS402,2023-11-21,4,Great Data import/export functionality,Comments about Data import/export,Suggestions for Data import/export,Great Data import/export functionality - Data import/export feedback.
+CS403,2023-12-11,5,Recent improvements to Workflow automation,Comments about Workflow automation,Suggestions for Workflow automation,Recent improvements to Workflow automation - Workflow automation feedback.
+CS404,2023-11-24,3,Issues with Email integration,Comments about Email integration,Suggestions for Email integration,Issues with Email integration - Email integration feedback.
+CS405,2023-10-10,3,Integration issues,Comments about Calendar sync,Suggestions for Calendar sync,Integration issues - Calendar sync feedback.
+CS406,2023-10-01,2,API needs improvement,Comments about API,Suggestions for API,API needs improvement - API feedback.
+CS407,2023-10-03,3,Integration issues,Comments about Workflow automation,Suggestions for Workflow automation,Integration issues - Workflow automation feedback.
+CS408,2023-12-17,4,Great Search functionality functionality,Comments about Search functionality,Suggestions for Search functionality,Great Search functionality functionality - Search functionality feedback.
+CS409,2023-11-10,4,System reliability,Comments about Search functionality,Suggestions for Search functionality,System reliability - Search functionality feedback.
+CS410,2023-11-12,4,Great Calendar sync functionality,Comments about Calendar sync,Suggestions for Calendar sync,Great Calendar sync functionality - Calendar sync feedback.
+CS411,2023-12-05,3,Performance problems,Comments about API,Suggestions for API,Performance problems - API feedback.
+CS412,2023-11-10,3,Issues with Calendar sync,Comments about Calendar sync,Suggestions for Calendar sync,Issues with Calendar sync - Calendar sync feedback.
+CS413,2023-10-29,4,Recent improvements to Customer support,Comments about Customer support,Suggestions for Customer support,Recent improvements to Customer support - Customer support feedback.
+CS414,2023-10-27,5,Easy to use interface,Comments about Email integration,Suggestions for Email integration,Easy to use interface - Email integration feedback.
+CS415,2023-10-24,3,Integration issues,Comments about Search functionality,Suggestions for Search functionality,Integration issues - Search functionality feedback.

@@ -1,0 +1,61 @@
+response_id,survey_date,satisfaction_score,reason_for_rating,feature_feedback,improvement_suggestions,feedback_text
+CS101,2023-01-04,2,Missing features,Comments about Search functionality,Suggestions for Search functionality,Missing features - Search functionality feedback.
+CS102,2023-01-13,4,Great Reporting functionality,Comments about Reporting,Suggestions for Reporting,Great Reporting functionality - Reporting feedback.
+CS103,2023-03-07,4,Great API functionality,Comments about API,Suggestions for API,Great API functionality - API feedback.
+CS104,2023-03-15,4,Easy to use interface,Comments about Workflow automation,Suggestions for Workflow automation,Easy to use interface - Workflow automation feedback.
+CS105,2023-01-24,3,Integration issues,Comments about Email integration,Suggestions for Email integration,Integration issues - Email integration feedback.
+CS106,2023-01-17,5,Easy to use interface,Comments about Search functionality,Suggestions for Search functionality,Easy to use interface - Search functionality feedback.
+CS107,2023-01-17,4,Great Calendar sync functionality,Comments about Calendar sync,Suggestions for Calendar sync,Great Calendar sync functionality - Calendar sync feedback.
+CS108,2023-01-21,4,Recent improvements to Customer support,Comments about Customer support,Suggestions for Customer support,Recent improvements to Customer support - Customer support feedback.
+CS109,2023-01-26,2,Integration issues,Comments about Search functionality,Suggestions for Search functionality,Integration issues - Search functionality feedback.
+CS110,2023-01-26,5,Easy to use interface,Comments about UI/UX,Suggestions for UI/UX,Easy to use interface - UI/UX feedback.
+CS111,2023-01-10,3,Issues with Workflow automation,Comments about Workflow automation,Suggestions for Workflow automation,Issues with Workflow automation - Workflow automation feedback.
+CS112,2023-03-04,3,Missing features,Comments about Workflow automation,Suggestions for Workflow automation,Missing features - Workflow automation feedback.
+CS113,2023-03-18,4,Easy to use interface,Comments about Customer support,Suggestions for Customer support,Easy to use interface - Customer support feedback.
+CS114,2023-02-26,5,Easy to use interface,Comments about Email integration,Suggestions for Email integration,Easy to use interface - Email integration feedback.
+CS115,2023-02-05,5,System reliability,Comments about Workflow automation,Suggestions for Workflow automation,System reliability - Workflow automation feedback.
+CS201,2023-06-20,3,Integration issues,Comments about Customer support,Suggestions for Customer support,Integration issues - Customer support feedback.
+CS202,2023-05-25,3,Issues with Workflow automation,Comments about Workflow automation,Suggestions for Workflow automation,Issues with Workflow automation - Workflow automation feedback.
+CS203,2023-06-27,3,Issues with Customer support,Comments about Customer support,Suggestions for Customer support,Issues with Customer support - Customer support feedback.
+CS204,2023-05-03,4,Excellent customer support,Comments about Data import/export,Suggestions for Data import/export,Excellent customer support - Data import/export feedback.
+CS205,2023-05-28,3,Missing features,Comments about Mobile app,Suggestions for Mobile app,Missing features - Mobile app feedback.
+CS206,2023-04-10,4,Easy to use interface,Comments about Data import/export,Suggestions for Data import/export,Easy to use interface - Data import/export feedback.
+CS207,2023-06-14,4,Excellent customer support,Comments about Mobile app,Suggestions for Mobile app,Excellent customer support - Mobile app feedback.
+CS208,2023-06-01,3,Issues with Reporting,Comments about Reporting,Suggestions for Reporting,Issues with Reporting - Reporting feedback.
+CS209,2023-05-09,4,Easy to use interface,Comments about Dashboard,Suggestions for Dashboard,Easy to use interface - Dashboard feedback.
+CS210,2023-05-14,2,Issues with Mobile app,Comments about Mobile app,Suggestions for Mobile app,Issues with Mobile app - Mobile app feedback.
+CS211,2023-04-29,5,Excellent customer support,Comments about UI/UX,Suggestions for UI/UX,Excellent customer support - UI/UX feedback.
+CS212,2023-05-22,3,Missing features,Comments about API,Suggestions for API,Missing features - API feedback.
+CS213,2023-04-24,5,Easy to use interface,Comments about Performance,Suggestions for Performance,Easy to use interface - Performance feedback.
+CS214,2023-04-27,4,Great Search functionality functionality,Comments about Search functionality,Suggestions for Search functionality,Great Search functionality functionality - Search functionality feedback.
+CS215,2023-04-06,5,Great Mobile app functionality,Comments about Mobile app,Suggestions for Mobile app,Great Mobile app functionality - Mobile app feedback.
+CS301,2023-09-21,5,Easy to use interface,Comments about Reporting,Suggestions for Reporting,Easy to use interface - Reporting feedback.
+CS302,2023-08-31,4,Great Search functionality functionality,Comments about Search functionality,Suggestions for Search functionality,Great Search functionality functionality - Search functionality feedback.
+CS303,2023-09-11,4,System reliability,Comments about Data import/export,Suggestions for Data import/export,System reliability - Data import/export feedback.
+CS304,2023-09-02,3,Customer support needs improvement,Comments about Customer support,Suggestions for Customer support,Customer support needs improvement - Customer support feedback.
+CS305,2023-08-09,3,Issues with Performance,Comments about Performance,Suggestions for Performance,Issues with Performance - Performance feedback.
+CS306,2023-08-22,2,Integration issues,Comments about API,Suggestions for API,Integration issues - API feedback.
+CS307,2023-09-20,5,Easy to use interface,Comments about API,Suggestions for API,Easy to use interface - API feedback.
+CS308,2023-08-01,3,Mobile app needs improvement,Comments about Mobile app,Suggestions for Mobile app,Mobile app needs improvement - Mobile app feedback.
+CS309,2023-09-12,5,Easy to use interface,Comments about UI/UX,Suggestions for UI/UX,Easy to use interface - UI/UX feedback.
+CS310,2023-07-06,2,API needs improvement,Comments about API,Suggestions for API,API needs improvement - API feedback.
+CS311,2023-07-30,3,Missing features,Comments about Search functionality,Suggestions for Search functionality,Missing features - Search functionality feedback.
+CS312,2023-08-19,5,Easy to use interface,Comments about Data import/export,Suggestions for Data import/export,Easy to use interface - Data import/export feedback.
+CS313,2023-09-04,4,System reliability,Comments about Workflow automation,Suggestions for Workflow automation,System reliability - Workflow automation feedback.
+CS314,2023-08-23,5,Easy to use interface,Comments about Search functionality,Suggestions for Search functionality,Easy to use interface - Search functionality feedback.
+CS315,2023-09-14,3,Performance problems,Comments about Calendar sync,Suggestions for Calendar sync,Performance problems - Calendar sync feedback.
+CS401,2023-10-11,5,Excellent customer support,Comments about API,Suggestions for API,Excellent customer support - API feedback.
+CS402,2023-11-21,4,Great Data import/export functionality,Comments about Data import/export,Suggestions for Data import/export,Great Data import/export functionality - Data import/export feedback.
+CS403,2023-12-11,5,Recent improvements to Workflow automation,Comments about Workflow automation,Suggestions for Workflow automation,Recent improvements to Workflow automation - Workflow automation feedback.
+CS404,2023-11-24,3,Issues with Email integration,Comments about Email integration,Suggestions for Email integration,Issues with Email integration - Email integration feedback.
+CS405,2023-10-10,3,Integration issues,Comments about Calendar sync,Suggestions for Calendar sync,Integration issues - Calendar sync feedback.
+CS406,2023-10-01,2,API needs improvement,Comments about API,Suggestions for API,API needs improvement - API feedback.
+CS407,2023-10-03,3,Integration issues,Comments about Workflow automation,Suggestions for Workflow automation,Integration issues - Workflow automation feedback.
+CS408,2023-12-17,4,Great Search functionality functionality,Comments about Search functionality,Suggestions for Search functionality,Great Search functionality functionality - Search functionality feedback.
+CS409,2023-11-10,4,System reliability,Comments about Search functionality,Suggestions for Search functionality,System reliability - Search functionality feedback.
+CS410,2023-11-12,4,Great Calendar sync functionality,Comments about Calendar sync,Suggestions for Calendar sync,Great Calendar sync functionality - Calendar sync feedback.
+CS411,2023-12-05,3,Performance problems,Comments about API,Suggestions for API,Performance problems - API feedback.
+CS412,2023-11-10,3,Issues with Calendar sync,Comments about Calendar sync,Suggestions for Calendar sync,Issues with Calendar sync - Calendar sync feedback.
+CS413,2023-10-29,4,Recent improvements to Customer support,Comments about Customer support,Suggestions for Customer support,Recent improvements to Customer support - Customer support feedback.
+CS414,2023-10-27,5,Easy to use interface,Comments about Email integration,Suggestions for Email integration,Easy to use interface - Email integration feedback.
+CS415,2023-10-24,3,Integration issues,Comments about Search functionality,Suggestions for Search functionality,Integration issues - Search functionality feedback.

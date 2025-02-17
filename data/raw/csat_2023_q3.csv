@@ -1,0 +1,16 @@
+response_id,survey_date,satisfaction_score,reason_for_rating,feature_feedback,improvement_suggestions,feedback_text
+CS301,2023-09-21,5,Easy to use interface,Comments about Reporting,Suggestions for Reporting,Easy to use interface - Reporting feedback.
+CS302,2023-08-31,4,Great Search functionality functionality,Comments about Search functionality,Suggestions for Search functionality,Great Search functionality functionality - Search functionality feedback.
+CS303,2023-09-11,4,System reliability,Comments about Data import/export,Suggestions for Data import/export,System reliability - Data import/export feedback.
+CS304,2023-09-02,3,Customer support needs improvement,Comments about Customer support,Suggestions for Customer support,Customer support needs improvement - Customer support feedback.
+CS305,2023-08-09,3,Issues with Performance,Comments about Performance,Suggestions for Performance,Issues with Performance - Performance feedback.
+CS306,2023-08-22,2,Integration issues,Comments about API,Suggestions for API,Integration issues - API feedback.
+CS307,2023-09-20,5,Easy to use interface,Comments about API,Suggestions for API,Easy to use interface - API feedback.
+CS308,2023-08-01,3,Mobile app needs improvement,Comments about Mobile app,Suggestions for Mobile app,Mobile app needs improvement - Mobile app feedback.
+CS309,2023-09-12,5,Easy to use interface,Comments about UI/UX,Suggestions for UI/UX,Easy to use interface - UI/UX feedback.
+CS310,2023-07-06,2,API needs improvement,Comments about API,Suggestions for API,API needs improvement - API feedback.
+CS311,2023-07-30,3,Missing features,Comments about Search functionality,Suggestions for Search functionality,Missing features - Search functionality feedback.
+CS312,2023-08-19,5,Easy to use interface,Comments about Data import/export,Suggestions for Data import/export,Easy to use interface - Data import/export feedback.
+CS313,2023-09-04,4,System reliability,Comments about Workflow automation,Suggestions for Workflow automation,System reliability - Workflow automation feedback.
+CS314,2023-08-23,5,Easy to use interface,Comments about Search functionality,Suggestions for Search functionality,Easy to use interface - Search functionality feedback.
+CS315,2023-09-14,3,Performance problems,Comments about Calendar sync,Suggestions for Calendar sync,Performance problems - Calendar sync feedback.
