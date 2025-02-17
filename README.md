@@ -74,14 +74,14 @@ This will:
 
 ```
 dreyfus/
-├── data/ |
-│   ├── raw/          # Raw input data |
-│   └── output/       # Processed data |
-├── src/ |
-│   ├── preprocessing.py |
-│   ├── data_ingestion.py |
-│   ├── sentiment_analysis.py |
-│   ├── impact_analysis.py |
+├── data/
+│   ├── raw/          # Raw input data
+│   └── output/       # Processed data
+├── src/
+│   ├── preprocessing.py
+│   ├── data_ingestion.py
+│   ├── sentiment_analysis.py
+│   ├── impact_analysis.py
     visualise.py
  scripts/
     generate_sample_data.py
@@ -92,13 +92,13 @@ dreyfus/
 ## Output
 
 The analysis will generate:
-- Processed data files in \data/output/\
+- Processed data files in `data/output/`
 - Impact analysis visualizations
 - Priority-ranked development items
 - Theme and sentiment analysis results
 
 ## Notes
 
-- Ensure the \data/raw\ directory exists before running the sample data generator
+- Ensure the `data/raw` directory exists before running the sample data generator
 - The virtual environment must be activated for all commands
 - All paths are relative to the project root directory
