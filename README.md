@@ -1,6 +1,6 @@
 # Dreyfus - Development Impact Analysis Tool
 
-This tool analyzes the impact of development changes by processing CSAT surveys, support tickets, and development backlog data.
+This tool analyses the impact of development changes by processing CSAT surveys, support tickets, and development backlog data.
 
 ## Setup
 
@@ -68,7 +68,7 @@ This will:
 2. Load and ingest the data
 3. Run sentiment analysis on CSAT and ticket text
 4. Analyze development impact
-5. Generate visualizations
+5. Generate visualisations
 
 ## Project Structure
 
@@ -93,7 +93,7 @@ dreyfus/
 
 The analysis will generate:
 - Processed data files in `data/output/`
-- Impact analysis visualizations
+- Impact analysis visualisations
 - Priority-ranked development items
 - Theme and sentiment analysis results
 
