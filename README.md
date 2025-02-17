@@ -8,24 +8,29 @@ This tool analyzes the impact of development changes by processing CSAT surveys,
 
 First, create and activate a Python virtual environment:
 
-\\\
+
 # Create virtual environment
+```bash
 python -m venv .venv
+```
 
 # Activate virtual environment (Windows PowerShell)
+```bash
 .\.venv\Scripts\Activate.ps1
+```
 
 # Activate virtual environment (Mac/Linux)
+```bash
 source .venv/bin/activate
-\\\
+```
 
 ### 2. Install Dependencies
 
 With the virtual environment activated, install the required packages:
 
-\\\
+```bash
 pip install -e .
-\\\
+```
 
 This will install:
 - pandas
@@ -38,9 +43,9 @@ This will install:
 
 Before running the main analysis, you need some data to analyze. Use the sample data generator:
 
-\\\
+```bash
 python scripts/generate_sample_data.py
-\\\
+```
 
 This will create:
 - \data/raw/dev_backlog.csv\: Development backlog items
@@ -54,9 +59,9 @@ This will create:
 
 Run the complete analysis pipeline with:
 
-\\\
+```bash
 python main.py
-\\\
+```
 
 This will:
 1. Preprocess the raw data
@@ -67,22 +72,22 @@ This will:
 
 ## Project Structure
 
-\\\
+```
 dreyfus/
-├── data/
-│   ├── raw/          # Raw input data
-│   └── output/       # Processed data
-├── src/
-│   ├── preprocessing.py
-│   ├── data_ingestion.py
-│   ├── sentiment_analysis.py
-│   ├── impact_analysis.py
+├── data/ |
+│   ├── raw/          # Raw input data |
+│   └── output/       # Processed data |
+├── src/ |
+│   ├── preprocessing.py |
+│   ├── data_ingestion.py |
+│   ├── sentiment_analysis.py |
+│   ├── impact_analysis.py |
     visualise.py
  scripts/
     generate_sample_data.py
  main.py
  setup.py
-\\\
+```
 
 ## Output
 
