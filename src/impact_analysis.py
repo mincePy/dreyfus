@@ -47,11 +47,45 @@ class ImpactAnalyzer:
             logger.error(f"Error in impact analysis: {str(e)}")
             raise
     
+    def _calculate_theme_frequency(self, tickets_df: pd.DataFrame, sentiment_results: Dict) -> Dict[str, float]:
+        """Calculate normalized frequency and sentiment impact of each theme"""
+        theme_stats = {}
+        themes = sentiment_results.get('themes', {})
+        
+        for theme, theme_data in themes.items():
+            # Calculate theme frequency
+            frequency = len(theme_data['occurrences']) / len(tickets_df)
+            
+            # Calculate average sentiment for this theme
+            theme_sentiment = np.mean(theme_data['sentiments'])
+            
+            # Themes with negative sentiment get higher weight
+            sentiment_weight = 2.0 if theme_sentiment < 0 else 1.0
+            
+            theme_stats[theme] = frequency * sentiment_weight
+            
+        return theme_stats
+    
+    def _calculate_theme_score(self, dev_item: pd.Series, theme_stats: Dict[str, float]) -> float:
+        """Calculate theme relevance score for a development item"""
+        # Extract themes from development item title and description
+        item_text = f"{dev_item['title']} {dev_item.get('description', '')}"
+        item_themes = self.text_analyzer.extract_themes(item_text)
+        
+        # Sum the importance scores of matching themes
+        theme_score = sum(theme_stats.get(theme, 0) for theme in item_themes)
+        
+        # Normalize to 0-1 range
+        max_possible_score = max(theme_stats.values()) if theme_stats else 1
+        normalized_score = theme_score / max_possible_score if max_possible_score > 0 else 0
+        
+        return normalized_score
+
     def _calculate_impact(self, tickets_df, dev_tickets_df, sentiment_results):
         """Calculate impact metrics for development items"""
         try:
-            # Extract themes from sentiment results
-            themes = sentiment_results.get('themes', [])
+            # Calculate theme statistics
+            theme_stats = self._calculate_theme_frequency(tickets_df, sentiment_results)
             
             impact_scores = []
             
@@ -70,11 +104,22 @@ class ImpactAnalyzer:
                     'Low': 1
                 }.get(dev_item['priority'], 1)
                 
-                # Calculate composite score using themes and priority
+                # Normalize story points (assuming 34 is max story points)
+                story_points_score = dev_item['story_points'] / 34
+                
+                # Calculate theme relevance score
+                theme_score = self._calculate_theme_score(dev_item, theme_stats)
+                
+                # Calculate composite score with three components
                 score['composite_score'] = (
-                    (priority_score * 0.6) +
-                    (dev_item['story_points'] / 34 * 0.4)  # Normalize story points
+                    (priority_score / 3 * 0.4) +      # Priority (normalized to 0-1) is 40%
+                    (story_points_score * 0.3) +      # Story points is 30%
+                    (theme_score * 0.3)               # Theme relevance is 30%
                 )
+                
+                # Add theme analysis details for transparency
+                score['theme_score'] = theme_score
+                score['relevant_themes'] = self.text_analyzer.extract_themes(dev_item['title'])
                 
                 impact_scores.append(score)
             
@@ -190,13 +235,63 @@ class ImpactAnalyzer:
 if __name__ == "__main__":
     # Example usage
     analyzer = ImpactAnalyzer()
-    impact = analyzer.analyze_impact(development_date=datetime(2024, 1, 1))
+    impact_df = analyzer.analyze_impact(development_date=datetime(2024, 1, 1))
     
-    print(f"Sentiment Change: {impact.sentiment_change:.3f}")
-    print(f"Statistical Significance: p={impact.p_value:.3f}")
-    print("\nTheme Changes:")
-    for theme, change in impact.theme_changes.items():
-        print(f"{theme}: {change:.3f}")
-    print("\nSignificant Themes:")
-    for theme in impact.significant_themes:
-        print(f"- {theme}") 
+    # Generate HTML report
+    html_content = f"""
+    <html>
+    <head>
+        <style>
+            body {{ font-family: Arial, sans-serif; margin: 20px; }}
+            .metric {{ margin-bottom: 20px; }}
+            .theme {{ margin-left: 20px; }}
+            table {{ border-collapse: collapse; width: 100%; margin-top: 20px; }}
+            th, td {{ border: 1px solid #ddd; padding: 8px; text-align: left; }}
+            th {{ background-color: #f2f2f2; }}
+            .high-impact {{ background-color: #ffebee; }}
+            .medium-impact {{ background-color: #fff3e0; }}
+        </style>
+    </head>
+    <body>
+        <h1>Development Impact Analysis Report</h1>
+        
+        <h2>Top Priority Items</h2>
+        <table>
+            <tr>
+                <th>Ticket ID</th>
+                <th>Title</th>
+                <th>Priority</th>
+                <th>Story Points</th>
+                <th>Theme Score</th>
+                <th>Composite Score</th>
+                <th>Relevant Themes</th>
+            </tr>
+            {''.join(
+                f"<tr class='{'high-impact' if row['composite_score'] > 0.7 else 'medium-impact' if row['composite_score'] > 0.4 else ''}'>"
+                f"<td>{row['ticket_id']}</td>"
+                f"<td>{row['title']}</td>"
+                f"<td>{row['priority']}</td>"
+                f"<td>{row['story_points']}</td>"
+                f"<td>{row['theme_score']:.2f}</td>"
+                f"<td>{row['composite_score']:.2f}</td>"
+                f"<td>{', '.join(row['relevant_themes'])}</td>"
+                "</tr>"
+                for _, row in impact_df.head(10).iterrows()  # Show top 10 items
+            )}
+        </table>
+        
+        <h2>Analysis Summary</h2>
+        <div class="metric">
+            <p><strong>Total Items Analyzed:</strong> {len(impact_df)}</p>
+            <p><strong>Average Impact Score:</strong> {impact_df['composite_score'].mean():.2f}</p>
+            <p><strong>High Impact Items (>0.7):</strong> {len(impact_df[impact_df['composite_score'] > 0.7])}</p>
+        </div>
+    </body>
+    </html>
+    """
+    
+    # Save the HTML report
+    with open('impact_analysis_report.html', 'w') as f:
+        f.write(html_content)
+    
+    print("Report generated: impact_analysis_report.html") 

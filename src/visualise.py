@@ -113,24 +113,44 @@ class DevelopmentVisualizer:
         logger.info(f"Impact charts saved to: {output_path}")
     
     def _create_summary_report(self, impact_df):
-        """Create text-based summary report"""
+        """Create HTML-based summary report"""
         top_priority = impact_df.nlargest(5, 'composite_score')
         
-        report_content = [
-            "# Development Impact Analysis Summary",
-            "",
-            "## Top Priority Items",
-            *[f"- {row['ticket_id']}: {row['title']} (Impact Score: {row['composite_score']:.2f})"
-              for _, row in top_priority.iterrows()],
-            "",
-            "## Priority Distribution",
-            *[f"- {priority}: {count} items"
-              for priority, count in impact_df['priority'].value_counts().items()],
-            ""
-        ]
+        html_content = f"""
+        <html>
+        <head>
+            <style>
+                body {{ font-family: Arial, sans-serif; margin: 20px; }}
+                .priority-item {{ margin: 10px 0; padding: 10px; border-left: 4px solid #007bff; }}
+                .priority-count {{ margin: 5px 0; padding: 5px; background-color: #f8f9fa; }}
+                h1, h2 {{ color: #333; }}
+            </style>
+        </head>
+        <body>
+            <h1>Development Impact Analysis Summary</h1>
+            
+            <h2>Top Priority Items</h2>
+            {''.join(
+                f'<div class="priority-item">'
+                f'<strong>{row["ticket_id"]}</strong>: {row["title"]} '
+                f'<br>Impact Score: {row["composite_score"]:.2f}'
+                f'</div>'
+                for _, row in top_priority.iterrows()
+            )}
+            
+            <h2>Priority Distribution</h2>
+            {''.join(
+                f'<div class="priority-count">'
+                f'<strong>{priority}</strong>: {count} items'
+                f'</div>'
+                for priority, count in impact_df['priority'].value_counts().items()
+            )}
+        </body>
+        </html>
+        """
         
-        output_path = self.viz_dir / 'summary_report.md'
-        output_path.write_text('\n'.join(report_content))
+        output_path = self.viz_dir / 'summary_report.html'
+        output_path.write_text(html_content)
         logger.info(f"Summary report saved to: {output_path}")
 
 if __name__ == "__main__":

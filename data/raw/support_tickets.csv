@@ -1,26 +1,26 @@
 ticket_id,created_date,status,priority,category,subject,description,resolution_notes
-SUP-001,2023-10-10,Closed,Low,Technical,Data import failed,Customer reported: Data import failed,Resolution for Data import failed
-SUP-002,2023-03-02,Closed,Medium,Feature Request,Search not returning results,Customer reported: Search not returning results,Resolution for Search not returning results
-SUP-003,2023-05-14,Closed,Low,Technical,Report generation error,Customer reported: Report generation error,Resolution for Report generation error
-SUP-004,2023-12-25,Closed,Medium,Usage,Workflow automation issue,Customer reported: Workflow automation issue,Resolution for Workflow automation issue
-SUP-005,2023-06-06,Closed,Medium,Feature Request,Data import failed,Customer reported: Data import failed,Resolution for Data import failed
-SUP-006,2023-02-07,Closed,Medium,Bug,Email sync not working,Customer reported: Email sync not working,Resolution for Email sync not working
-SUP-007,2023-01-23,Closed,Low,Technical,Mobile app crashes,Customer reported: Mobile app crashes,Resolution for Mobile app crashes
-SUP-008,2023-04-18,Closed,High,Technical,Custom field problems,Customer reported: Custom field problems,Resolution for Custom field problems
-SUP-009,2023-06-16,Closed,Medium,Bug,Workflow automation issue,Customer reported: Workflow automation issue,Resolution for Workflow automation issue
-SUP-010,2023-01-01,Closed,High,Feature Request,Workflow automation issue,Customer reported: Workflow automation issue,Resolution for Workflow automation issue
-SUP-011,2023-01-20,Closed,Medium,Feature Request,Email sync not working,Customer reported: Email sync not working,Resolution for Email sync not working
-SUP-012,2023-11-15,Closed,Low,Technical,Email sync not working,Customer reported: Email sync not working,Resolution for Email sync not working
-SUP-013,2023-08-23,Closed,Medium,Technical,Mobile app crashes,Customer reported: Mobile app crashes,Resolution for Mobile app crashes
-SUP-014,2023-03-09,Closed,Medium,Integration,Custom field problems,Customer reported: Custom field problems,Resolution for Custom field problems
-SUP-015,2023-09-16,Closed,Medium,Integration,Data import failed,Customer reported: Data import failed,Resolution for Data import failed
-SUP-016,2023-10-14,Closed,Low,Bug,Report generation error,Customer reported: Report generation error,Resolution for Report generation error
-SUP-017,2023-03-07,Closed,Low,Integration,Mobile app crashes,Customer reported: Mobile app crashes,Resolution for Mobile app crashes
-SUP-018,2023-12-23,Closed,Low,Usage,Cannot access dashboard,Customer reported: Cannot access dashboard,Resolution for Cannot access dashboard
-SUP-019,2023-08-25,Closed,High,Usage,Mobile app crashes,Customer reported: Mobile app crashes,Resolution for Mobile app crashes
-SUP-020,2023-03-02,Closed,High,Bug,Need help with API integration,Customer reported: Need help with API integration,Resolution for Need help with API integration
-SUP-021,2023-10-11,Closed,Medium,Integration,Calendar sync issues,Customer reported: Calendar sync issues,Resolution for Calendar sync issues
-SUP-022,2023-02-09,Closed,High,Technical,Search not returning results,Customer reported: Search not returning results,Resolution for Search not returning results
-SUP-023,2023-08-06,Closed,Medium,Feature Request,Search not returning results,Customer reported: Search not returning results,Resolution for Search not returning results
-SUP-024,2023-08-18,Closed,Low,Feature Request,Search not returning results,Customer reported: Search not returning results,Resolution for Search not returning results
-SUP-025,2023-01-26,Closed,Low,Integration,Data import failed,Customer reported: Data import failed,Resolution for Data import failed
+SUP-001,2023-07-23,Closed,Low,Technical,Workflow automation issue,Customer reported: Workflow automation issue,Resolution for Workflow automation issue
+SUP-002,2023-05-12,Closed,Medium,Bug,Email sync not working,Customer reported: Email sync not working,Resolution for Email sync not working
+SUP-003,2023-04-05,Closed,High,Integration,Data import failed,Customer reported: Data import failed,Resolution for Data import failed
+SUP-004,2023-03-16,Closed,Medium,Feature Request,Data import failed,Customer reported: Data import failed,Resolution for Data import failed
+SUP-005,2023-11-15,Closed,Low,Bug,Email sync not working,Customer reported: Email sync not working,Resolution for Email sync not working
+SUP-006,2023-11-19,Closed,High,Bug,Search not returning results,Customer reported: Search not returning results,Resolution for Search not returning results
+SUP-007,2023-12-16,Closed,Low,Technical,Workflow automation issue,Customer reported: Workflow automation issue,Resolution for Workflow automation issue
+SUP-008,2023-11-28,Closed,Low,Technical,Workflow automation issue,Customer reported: Workflow automation issue,Resolution for Workflow automation issue
+SUP-009,2023-01-22,Closed,High,Feature Request,Email sync not working,Customer reported: Email sync not working,Resolution for Email sync not working
+SUP-010,2023-07-17,Closed,High,Bug,Need help with API integration,Customer reported: Need help with API integration,Resolution for Need help with API integration
+SUP-011,2023-03-03,Closed,High,Integration,Data import failed,Customer reported: Data import failed,Resolution for Data import failed
+SUP-012,2023-01-25,Closed,High,Usage,Mobile app crashes,Customer reported: Mobile app crashes,Resolution for Mobile app crashes
+SUP-013,2023-05-06,Closed,Medium,Usage,Need help with API integration,Customer reported: Need help with API integration,Resolution for Need help with API integration
+SUP-014,2023-05-26,Closed,High,Bug,Report generation error,Customer reported: Report generation error,Resolution for Report generation error
+SUP-015,2023-02-05,Closed,High,Usage,Cannot access dashboard,Customer reported: Cannot access dashboard,Resolution for Cannot access dashboard
+SUP-016,2023-12-16,Closed,Medium,Usage,Calendar sync issues,Customer reported: Calendar sync issues,Resolution for Calendar sync issues
+SUP-017,2023-06-15,Closed,Medium,Bug,Calendar sync issues,Customer reported: Calendar sync issues,Resolution for Calendar sync issues
+SUP-018,2023-03-15,Closed,High,Usage,Custom field problems,Customer reported: Custom field problems,Resolution for Custom field problems
+SUP-019,2023-04-07,Closed,Low,Integration,Workflow automation issue,Customer reported: Workflow automation issue,Resolution for Workflow automation issue
+SUP-020,2023-09-30,Closed,Medium,Integration,Mobile app crashes,Customer reported: Mobile app crashes,Resolution for Mobile app crashes
+SUP-021,2023-06-14,Closed,Medium,Usage,Need help with API integration,Customer reported: Need help with API integration,Resolution for Need help with API integration
+SUP-022,2023-07-04,Closed,High,Bug,Custom field problems,Customer reported: Custom field problems,Resolution for Custom field problems
+SUP-023,2023-06-23,Closed,Low,Feature Request,Cannot access dashboard,Customer reported: Cannot access dashboard,Resolution for Cannot access dashboard
+SUP-024,2023-09-16,Closed,High,Integration,Workflow automation issue,Customer reported: Workflow automation issue,Resolution for Workflow automation issue
+SUP-025,2023-07-27,Closed,Medium,Usage,Need help with API integration,Customer reported: Need help with API integration,Resolution for Need help with API integration
