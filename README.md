@@ -8,7 +8,7 @@ This tool analyzes the impact of development changes by processing CSAT surveys,
 
 First, create and activate a Python virtual environment:
 
-\\\ash
+\\\
 # Create virtual environment
 python -m venv .venv
 
@@ -23,7 +23,7 @@ source .venv/bin/activate
 
 With the virtual environment activated, install the required packages:
 
-\\\ash
+\\\
 pip install -e .
 \\\
 
@@ -38,7 +38,7 @@ This will install:
 
 Before running the main analysis, you need some data to analyze. Use the sample data generator:
 
-\\\ash
+\\\
 python scripts/generate_sample_data.py
 \\\
 
@@ -54,7 +54,7 @@ This will create:
 
 Run the complete analysis pipeline with:
 
-\\\ash
+\\\
 python main.py
 \\\
 
