@@ -48,12 +48,12 @@ python scripts/generate_sample_data.py
 ```
 
 This will create:
-- \data/raw/dev_backlog.csv\: Development backlog items
-- \data/raw/csat_2023_q1.csv\: Q1 CSAT survey responses
-- \data/raw/csat_2023_q2.csv\: Q2 CSAT survey responses
-- \data/raw/csat_2023_q3.csv\: Q3 CSAT survey responses
-- \data/raw/csat_2023_q4.csv\: Q4 CSAT survey responses
-- \data/raw/support_tickets.csv\: Support ticket data
+- `data/raw/dev_backlog.csv`: Development backlog items
+- `data/raw/csat_2023_q1.csv`: Q1 CSAT survey responses
+- `data/raw/csat_2023_q2.csv`: Q2 CSAT survey responses
+- `data/raw/csat_2023_q3.csv`: Q3 CSAT survey responses
+- `data/raw/csat_2023_q4.csv`: Q4 CSAT survey responses
+- `data/raw/support_tickets.csv`: Support ticket data
 
 ## Run Analysis
 
